@@ -5,8 +5,8 @@ CI ?= false
 .PHONY: install
 install: install-npm
 
-LOCUST_USERS = 1
-LOCUST_RUNTIME = 30
+LOCUST_USERS = 10
+#LOCUST_RUNTIME = 30
 LOCUST_ITERATION=2
 
 .PHONY: install-locust
@@ -21,4 +21,4 @@ endif
 .PHONY: run-api-automation
 run-api-automation:
 	@echo "-running script...."
-	locust -f src/automation.py --headless -u $(LOCUST_USERS) -t $(LOCUST_RUNTIME)s -r $(LOCUST_ITERATION) --html report.html
+	locust -f src/automation.py --headless -u $(LOCUST_USERS) -r $(LOCUST_ITERATION) --html report.html
