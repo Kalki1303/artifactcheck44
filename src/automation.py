@@ -8,4 +8,4 @@ class QuickstartUser(HttpUser):
     @task
     def hello_world(self):
         self.client.get("https://docs.locust.io/en/stable/quickstart.html")
-        #self.client.get("/world")
+       
