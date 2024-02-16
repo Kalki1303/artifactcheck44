@@ -19,11 +19,13 @@ jobs:
       - name: Insatll Make
         run: sudo apt-get install make
 
+      - name: list directory r
+        run: ls -R
+
       - name: Install locust
         run: make install-locust
 
-      - name: list directory
-        run: ls -R
+      
 
       - name: run api-automation
         run: make run-api-automation
