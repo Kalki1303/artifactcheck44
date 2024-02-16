@@ -25,13 +25,11 @@ jobs:
       - name: Install locust
         run: make install-locust
 
-      
-
       - name: run api-automation
         run: make run-api-automation
       
       - name: artifact
         uses: actions/upload-artifact@v4
         with:
-          name: report
-          path: path.html
+          name: locust-report
+          path: report.html
