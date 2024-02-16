@@ -21,6 +21,7 @@ jobs:
 
       - name: list directory r
         run: ls -R
+        echo "current directory": $PWD
 
       - name: Install locust
         run: make install-locust
