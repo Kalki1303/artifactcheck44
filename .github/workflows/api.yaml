@@ -29,6 +29,7 @@ jobs:
         run: make run-api-automation
       
       - name: artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: locust-report
