@@ -20,5 +20,5 @@ endif
 
 .PHONY: run-api-automation
 run-api-automation:
-	@echo "-running script..."
+	@echo "-running script...."
 	locust -f src/api.py --headless - u $(LOCUST_USERS) -t$(LOCUST_RUNTIME)s -r $(LOCUST_ITERATION) --html report.html
