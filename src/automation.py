@@ -7,7 +7,7 @@ class QuickstartUser(HttpUser):
 
     @task
     def hello_world(self):
-        response = self.client.get("/api/endpoint")
+        response = self.client.get("/todos/1")
         assert response.status_code == 200,f"request failed"
         #("https://docs.locust.io/en/stable/quickstart.html")
        
