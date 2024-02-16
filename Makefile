@@ -22,4 +22,4 @@ endif
 run-api-automation:
 	@echo "-running script...."
 	@set -e;\
-	locust -f src/automation.py --headless -u $(LOCUST_USERS) -t $(LOCUST_RUNTIME) -r $(LOCUST_ITERATION) --html report.html  || (exit 1)
+	locust -f src/automation.py --headless -u $(LOCUST_USERS) -t $(LOCUST_RUNTIME) -r $(LOCUST_ITERATION) --html report.html 
