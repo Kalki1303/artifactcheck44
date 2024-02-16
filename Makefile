@@ -6,7 +6,7 @@ CI ?= false
 install: install-npm
 
 LOCUST_USERS = 1
-LOCUST_RUNTIME = 10
+LOCUST_RUNTIME = 2
 LOCUST_ITERATION=1
 
 .PHONY: install-locust

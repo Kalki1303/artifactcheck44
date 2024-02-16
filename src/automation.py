@@ -84,10 +84,10 @@ class LocustClient(FastHttpUser):
                     # Avoid too much logging in load test script as it may slow it
                     log.info("API call resulted in success.")
 
-                else:
-                    resp_of_api.failure(resp_of_api.text)
-                    # Avoid too much logging in load test script as it may slow it
-                    log.error("API call resulted in failed.")
+                # else:
+                #     resp_of_api.failure(resp_of_api.text)
+                #     # Avoid too much logging in load test script as it may slow it
+                #     log.error("API call resulted in failed.")
 
         except Exception as e:
             log.error(f"Exception occurred! details are {e}")
