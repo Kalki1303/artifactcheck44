@@ -14,13 +14,16 @@ jobs:
       - name: Set up python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
       - name: Insatll Make
         run: sudo apt-get install make
 
       - name: Install locust
         run: make install-locust
+
+      - name: list directory
+        run: ls -R
 
       - name: run api-automation
         run: make run-api-automation
