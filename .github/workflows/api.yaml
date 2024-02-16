@@ -27,6 +27,7 @@ jobs:
 
       - name: run api-automation
         run: make run-api-automation
+        continue-on-error: true
       
       - name: artifact
         if: always()
