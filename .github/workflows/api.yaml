@@ -21,12 +21,9 @@ jobs:
 
       - name: list directory r
         run: ls -R
-        echo "current directory: $PWD"
 
       - name: Install locust
         run: make install-locust
-
-      
 
       - name: run api-automation
         run: make run-api-automation
@@ -34,5 +31,5 @@ jobs:
       - name: artifact
         uses: actions/upload-artifact@v4
         with:
-          name: report
+          name: locust-report
           path: report.html
