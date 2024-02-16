@@ -16,6 +16,9 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Insatll Make
+        run: sudo apt-get install make
+
       - name: Install locust
         run: make install-locust
 
